@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>UterNorm | Our Services</title>
+  <meta name="author" content="UterNorm" />
+  <meta name="description" content="UterNorm offers mining, logistics, and industrial solutions." />
+  <meta name="keywords" content="UterNorm, mining, logistics, consulting, services" />
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+
+  <style>
+    :root {
+      --primary: #124ea2;
+      --primary-light: #3880c2;
+      --accent: #ffd700;
+      --bg: #f5f7fa;
+      --card-bg: rgba(255, 255, 255, 0.95);
+      --shadow: 0 8px 32px rgba(18,78,162,0.1);
+      --radius: 20px;
+      --transition: all 0.25s cubic-bezier(.4, 2, .3, 1);
+      --faq-bg: #e6f0fa;
+    }
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: #222;
+      scroll-behavior: smooth;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; }
+    /* Header */
+    .header { background: #fff; box-shadow: 0 4px 32px rgba(18,78,162,0.06); padding:0; position:sticky; top:0; z-index:999; }
+    .header-inner { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:20px; }
+    .header-logo img { height:64px; }
+    .main-nav { display:flex; gap:30px; }
+    .main-nav a { font-weight:700; color:var(--primary); font-size:1.1rem; padding:5px 0; border-bottom:2px solid transparent; position:relative; }
+    .main-nav a::after { content:""; position:absolute; left:0; bottom:0; height:2px; width:0; background:var(--accent); transition:0.3s; }
+    .main-nav a:hover::after, .main-nav a.active::after { width:100%; }
+    .main-nav a:hover, .main-nav a.active { color:var(--accent); }
+    .header-contact { display:flex; align-items:center; gap:15px; }
+    .header-contact .icon-btn { background:var(--primary); color:#fff; border-radius:50%; width:44px; height:44px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; border:none; }
+    .header-contact .icon-btn:hover { background:var(--accent); color:var(--primary); }
+    .header-contact .contact-info { display:flex; flex-direction:column; }
+    .header-contact .contact-info span { font-size:0.9rem; color:var(--primary-light); }
+    .header-contact .contact-info a { color:var(--primary); font-weight:700; }
+
+    /* Breadcrumb with slideshow */
+    .breadcrumb {
+      position: relative;
+      min-height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+    .breadcrumb h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--primary);
+      position: relative;
+      z-index: 2;
+    }
+    .breadcrumb h1 span { color: var(--accent); }
+
+    /* Background Slideshow */
+    .breadcrumb::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-size: cover;
+      background-position: center;
+      animation: heroSlide 18s infinite ease-in-out;
+      z-index: 1;
+      filter: brightness(0.75);
+    }
+
+    @keyframes heroSlide {
+      0%   { background-image: url("assets/img/founderTwo.jpg"); }
+      33%  { background-image: url("assets/img/foundertooo.jpeg"); }
+      66%  { background-image: url("assets/img/foundertwo__.jpeg"); }
+      100% { background-image: url("assets/img/founderTwo.jpeg"); }
+    }
+
+    /* Services Section */
+    .services-section { max-width:1200px; margin:0 auto 60px auto; padding:0 20px; }
+    .section-header { text-align:center; margin-bottom:50px; }
+    .section-header .subtitle { color:var(--primary); font-weight:600; text-transform:uppercase; letter-spacing:1.5px; font-size:1.2rem; }
+    .section-header .title { font-size:2.6rem; font-weight:900; color:var(--primary); margin-top:5px; }
+
+    /* Force 3 + 2 layout */
+    .services-grid { 
+      display:grid; 
+      grid-template-columns:repeat(3, 1fr); 
+      gap:30px; 
+    }
+    .service-card { background:var(--card-bg); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; transition:var(--transition); text-align:center; }
+    .service-card:hover { transform:translateY(-5px); box-shadow:0 12px 40px rgba(18,78,162,0.15); }
+    .icon-circle { width:60px; height:60px; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-size:24px; margin:20px auto; }
+    .service-card img { width:100%; display:block; }
+    .service-card h3 { font-size:1.3rem; font-weight:700; color:var(--primary); margin:15px 0 10px 0; }
+    .service-card p { color:#555; font-size:1rem; margin:0 0 20px 0; }
+
+    /* FAQ */
+    .about-section-faq { max-width:900px; margin:0 auto 60px auto; padding:40px 20px; background:#fff; border-radius:var(--radius); box-shadow:var(--shadow); }
+    .about-section-faq .sec-subtitle { text-align:center; color:var(--primary); font-weight:600; text-transform:uppercase; margin-bottom:10px; }
+    .about-section-faq .sec-title { text-align:center; font-size:2rem; font-weight:900; margin-bottom:30px; color:var(--primary); }
+    .accordion { border-radius:var(--radius); overflow:hidden; }
+    .accordion-item + .accordion-item { border-top:1px solid var(--primary); }
+    .accordion-button { width:100%; background:#e6f0fa; border:none; padding:15px 20px; font-size:1rem; font-weight:600; display:flex; justify-content:space-between; cursor:pointer; }
+    .accordion-button[aria-expanded="true"] { background:var(--primary); color:#fff; }
+    .accordion-panel { max-height:0; overflow:hidden; transition:max-height 0.3s ease, padding 0.3s ease; background:#f5f7fa; padding:0 20px; }
+    .accordion-panel.open { padding:15px 20px; max-height:500px; }
+
+    /* Footer */
+    .footer { background:#fff; padding:40px 20px; margin-top:auto; border-top:2px solid var(--primary); }
+    .footer-inner { max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:40px; justify-content:space-between; }
+    .footer-logo img { height:50px; }
+    .footer-text { color:var(--primary); margin:15px 0; font-size:1rem; }
+    .footer-contact { display:flex; align-items:flex-start; gap:10px; margin-bottom:10px; }
+    .footer-contact .icon { font-size:1.2rem; color:var(--primary); margin-right:5px; }
+    .footer-social { display:flex; gap:10px; margin-top:10px; }
+    .footer-social a { width:36px; height:36px; display:flex; align-items:center; justify-content:center; background:var(--primary); color:#fff; border-radius:50%; }
+    .footer-social a:hover { background:var(--accent); color:var(--primary); }
+    .footer-links ul { list-style:none; padding:0; margin:0; }
+    .footer-links ul li { margin-bottom:8px; }
+    .footer-links ul li a { color:var(--primary); font-weight:600; transition:0.2s; }
+    .footer-links ul li a:hover { color:var(--accent); }
+    .copyright { text-align:center; padding:15px 0; font-size:0.9rem; color:var(--primary-light); }
+
+    /* Responsive */
+    @media(max-width:991px){ .services-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:575px){ .services-grid { grid-template-columns:1fr; } .breadcrumb h1 { font-size:1.5rem; } .header-logo img { height:44px; } }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-logo"><a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="UterNorm Logo"></a></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="service.html" class="active">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-contact">
+        <a class="icon-btn" href="tel:+27767652045"><i class="fa-solid fa-phone"></i></a>
+        <div class="contact-info">
+          <span>Call Helpline</span>
+          <a href="tel:+27767652045">+27767652045</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb">
+    <h1>Our <span>Services</span></h1>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="section-header">
+      <span class="subtitle">Our Services</span>
+      <h2 class="title">Mining, Logistics & Industrial Solutions</h2>
+    </div>
+    <div class="services-grid">
+
+      <!-- Card 1 -->
+      <div class="service-card">
+        <div class="icon-circle"><i class="fa-solid fa-hard-hat"></i></div>
+        <img src="assets/img/mining_img.jpg" alt="Mining Engineering">
+        <h3>Mining Engineering</h3>
+        <p>Comprehensive engineering solutions to optimize mining operations efficiently and safely.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <div class="icon-circle"><i class="fa-solid fa-helmet-safety"></i></div>
+        <img src="assets/img/safety.jpg" alt="Safety & Compliance">
+        <h3>Safety & Compliance</h3>
+        <p>Ensuring that your mining and industrial projects adhere to all safety and environmental regulations.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <div class="icon-circle"><i class="fa-solid fa-gears"></i></div>
+        <img src="assets/img/equipments.jpg" alt="Equipment Maintenance">
+        <h3>Equipment Maintenance</h3>
+        <p>Routine inspection, maintenance, and repair of all mining and industrial machinery.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card">
+        <div class="icon-circle"><i class="fa-solid fa-truck"></i></div>
+        <img src="assets/img/transport_and_logistics.jpg" alt="Logistics">
+        <h3>Transport & Logistics</h3>
+        <p>Safe and timely transport of mining equipment and resources across projects.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="service-card">
+        <div class="icon-circle"><i class="fa-solid fa-industry"></i></div>
+        <img src="assets/img/industrial_consulting.jpg" alt="Industrial Consulting">
+        <h3>Industrial Consulting</h3>
+        <p>Expert advice to streamline operations and maximize efficiency in your industrial projects.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="about-section-faq">
+    <span class="sec-subtitle">FAQ</span>
+    <h2 class="sec-title">Frequently <span class="title-highlight">Asked</span> Questions</h2>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-button" aria-expanded="true">1. What industries does UterNorm serve? <i class="fa fa-plus icon"></i></button>
+        <div class="accordion-panel open">UterNorm provides mining, logistics, and industrial consulting services across multiple sectors including construction, energy, and manufacturing.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" aria-expanded="false">2. Are your operations environmentally friendly? <i class="fa fa-plus icon"></i></button>
+        <div class="accordion-panel">Yes, we prioritize eco-friendly methods and adhere to all environmental regulations in our projects.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" aria-expanded="false">3. How can I request a consultation? <i class="fa fa-plus icon"></i></button>
+        <div class="accordion-panel">You can contact our helpline or fill out the contact form on our website to schedule a free consultation.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-button" aria-expanded="false">4. What areas do you operate in? <i class="fa fa-plus icon"></i></button>
+        <div class="accordion-panel">UterNorm operates nationwide, supporting projects in multiple regions with logistics and consulting expertise.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo"><a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="UterNorm Logo"></a></div>
+        <div class="footer-text">UterNorm delivers expert mining, logistics, and industrial solutions to help your business thrive efficiently and safely.</div>
+        <div class="footer-contact">
+          <span class="icon"><i class="fa-solid fa-phone"></i></span>
+          <div class="contact-info">
+            <a href="tel:+27767652045">+27767652045</a>
+            <span>Call us 24/7 for a free consultation</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="contact.html">Help Center</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="service.html">Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2025 <a href="index.html">UterNorm</a> All rights reserved.</div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.accordion-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const panel = button.nextElementSibling;
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !expanded);
+        panel.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

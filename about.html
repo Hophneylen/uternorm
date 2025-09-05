@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>UterNorm | About Us</title>
+  <meta name="description" content="UterNorm - Mining Engineering & Logistics Company" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+
+  <style>
+    :root {
+      --primary: #124ea2;
+      --primary-light: #3880c2;
+      --accent: #ffd700;
+      --bg: #f5f7fa;
+      --card-bg: rgba(255, 255, 255, 0.95);
+      --shadow: 0 8px 32px rgba(18,78,162,0.1);
+      --radius: 20px;
+      --transition: all 0.25s cubic-bezier(.4, 2, .3, 1);
+    }
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: #222;
+      scroll-behavior: smooth;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; }
+
+    /* ✅ Copied Header */
+    .header { background: #fff; box-shadow: 0 4px 32px rgba(18,78,162,0.06); padding:0; position:sticky; top:0; z-index:999; }
+    .header-inner { max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:20px; }
+    .header-logo img { height:64px; }
+    .main-nav { display:flex; gap:30px; }
+    .main-nav a { font-weight:700; color:var(--primary); font-size:1.1rem; padding:5px 0; border-bottom:2px solid transparent; position:relative; }
+    .main-nav a::after { content:""; position:absolute; left:0; bottom:0; height:2px; width:0; background:var(--accent); transition:0.3s; }
+    .main-nav a:hover::after, .main-nav a.active::after { width:100%; }
+    .main-nav a:hover, .main-nav a.active { color:var(--accent); }
+    .header-contact { display:flex; align-items:center; gap:15px; }
+    .header-contact .icon-btn { background:var(--primary); color:#fff; border-radius:50%; width:44px; height:44px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; border:none; }
+    .header-contact .icon-btn:hover { background:var(--accent); color:var(--primary); }
+    .header-contact .contact-info { display:flex; flex-direction:column; }
+    .header-contact .contact-info span { font-size:0.9rem; color:var(--primary-light); }
+    .header-contact .contact-info a { color:var(--primary); font-weight:700; }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      background: var(--primary);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .breadcrumb h1 { font-size: 2.2rem; font-weight: 900; }
+    .breadcrumb h1 span { color: var(--accent); }
+
+    /* About Section */
+    .about-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .about-imgs { display: flex; flex-direction: column; gap: 1rem; }
+    .about-imgs img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      object-fit: cover;
+    }
+    .about-content span.sec-subtitle {
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+    }
+    .about-content h2 {
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: var(--primary);
+      font-weight: 900;
+    }
+    .about-content h2 .title-highlight { color: var(--accent); }
+    .about-text { margin-bottom: 1.5rem; color: #555; }
+    .about-items { display: grid; gap: 1.5rem; margin-bottom: 2rem; }
+    .about-item h3 { font-size: 1.2rem; margin-bottom: 0.3rem; color: var(--primary); }
+    .about-item p { color: #555; }
+    .vs-btn2 {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: var(--shadow);
+      transition: background 0.3s;
+    }
+    .vs-btn2:hover { background: #0d3d80; }
+    .about-notice {
+      margin-top: 2rem;
+      padding: 1rem;
+      border-left: 5px solid var(--accent);
+      background: #fff9df;
+      border-radius: var(--radius);
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* Footer */
+    .footer { background:#fff; padding:40px 20px; margin-top:auto; border-top:2px solid var(--primary); }
+    .footer-inner { max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; gap:40px; justify-content:space-between; }
+    .footer-logo img { height:50px; }
+    .footer-text { color:var(--primary); margin:15px 0; font-size:1rem; }
+    .footer-contact { display:flex; align-items:flex-start; gap:10px; margin-bottom:10px; }
+    .footer-contact .icon { font-size:1.2rem; color:var(--primary); margin-right:5px; }
+    .footer-social { display:flex; gap:10px; margin-top:10px; }
+    .footer-social a { width:36px; height:36px; display:flex; align-items:center; justify-content:center; background:var(--primary); color:#fff; border-radius:50%; }
+    .footer-social a:hover { background:var(--accent); color:var(--primary); }
+    .footer-links ul { list-style:none; padding:0; margin:0; }
+    .footer-links ul li { margin-bottom:8px; }
+    .footer-links ul li a { color:var(--primary); font-weight:600; transition:0.2s; }
+    .footer-links ul li a:hover { color:var(--accent); }
+    .copyright { text-align:center; padding:15px 0; font-size:0.9rem; color:var(--primary-light); }
+
+    @media (max-width: 900px) {
+      .about-section { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ✅ Header (from service.html) -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="UterNorm Logo" /></a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-contact">
+        <a class="icon-btn" href="tel:+27767652045"><i class="fa-solid fa-phone"></i></a>
+        <div class="contact-info">
+          <span>Call Helpline</span>
+          <a href="tel:+27767652045">+27767652045</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb">
+    <h1>About <span>UterNorm</span></h1>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-imgs">
+      <img src="assets/img/professional-engineering-team-using-industry-40-software-smart-factory.jpg" alt="Mining engineering operations" />
+      <img src="assets/img/african-american-people-looking-supplies-list-pc-working-with-computer-check-inventory-logistics-employees-organizing-merchandise-shelves-warehouse-space-handheld-shot.jpg" alt="Logistics and transport solutions" />
+    </div>
+    <div class="about-content">
+      <span class="sec-subtitle">About UterNorm</span>
+      <h2>Mining Engineering & <span class="title-highlight">Logistics</span> Excellence</h2>
+      <p class="about-text">
+        UterNorm is a trusted partner in mining engineering and logistics.
+        We specialize in safe, reliable, and innovative solutions across mineral extraction,
+        fleet operations, and supply chain management — ensuring efficiency and sustainability for our clients.
+      </p>
+      <div class="about-items">
+        <div class="about-item">
+          <h3>Mining Engineering</h3>
+          <p>From exploration to operations, we deliver cutting-edge engineering expertise to power mining projects.</p>
+        </div>
+        <div class="about-item">
+          <h3>Logistics Solutions</h3>
+          <p>Comprehensive transport and logistics management to keep resources and projects moving.</p>
+        </div>
+      </div>
+      <a href="about.html" class="vs-btn2">Learn More →</a>
+      <div class="about-notice">
+        Reliable Engineering & Logistics Solutions for the Mining Industry
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo"><a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="UterNorm Logo"></a></div>
+        <div class="footer-text">UterNorm delivers expert mining, logistics, and industrial solutions to help your business thrive efficiently and safely.</div>
+        <div class="footer-contact">
+          <span class="icon"><i class="fa-solid fa-phone"></i></span>
+          <div class="contact-info">
+            <a href="tel:+27767652045">+27767652045</a>
+            <span>Call us 24/7 for a free consultation</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="contact.html">Help Center</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="service.html">Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2025 <a href="index.html">UterNorm</a> All rights reserved.</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Error 404 | EcoCleaners</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 10px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-logo img {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav ul li a {
+      font-weight: 500;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #2e8b57;
+    }
+
+    /* Hero / Breadcumb */
+    .hero {
+      background: url("assets/img/breadcumb/breadcumb-bg.png") center/cover no-repeat;
+      padding: 80px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .hero span {
+      color: #ffcc00;
+    }
+
+    /* Error Section */
+    .error {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url("assets/img/bg/bg-shep1.png") center/cover no-repeat;
+      padding: 40px 20px;
+    }
+    .error-content img {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+    .error-content .message {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+    .error-content .message span {
+      display: block;
+      font-size: 32px;
+      font-weight: 700;
+      color: #e63946;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #2e8b57;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #256d47;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 50px 20px 20px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    .footer-logo img {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .footer-text {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .contact-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+    .contact-box img {
+      width: 30px;
+    }
+    .footer-links ul {
+      list-style: none;
+    }
+    .footer-links ul li {
+      margin-bottom: 10px;
+    }
+    .footer-links a {
+      color: #ccc;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover {
+      color: #fff;
+    }
+    .social-icons {
+      margin-top: 15px;
+    }
+    .social-icons a {
+      margin-right: 12px;
+      color: #ccc;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #2e8b57;
+    }
+    .copyright {
+      border-top: 1px solid #333;
+      padding-top: 15px;
+      text-align: center;
+      font-size: 13px;
+    }
+    .copyright img {
+      height: 25px;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+    /* Back to Top */
+    #backToTop {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #2e8b57;
+      color: #fff;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: background 0.3s;
+    }
+    #backToTop:hover {
+      background: #256d47;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <div class="header-logo">
+        <a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="EcoCleaners logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Error <span>404</span></h1>
+  </div>
+
+  <!-- Error Section -->
+  <section class="error">
+    <div class="error-content">
+      <img src="assets/img/default/error-img.svg" alt="Error image">
+      <div class="message"><span>Oops!</span> That page can’t be found.</div>
+      <a href="index.html" class="btn">Go Back Homepage</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/img/logo-removebg-preview.png" alt="logo"></a>
+        </div>
+        <p class="footer-text">Eco - Cleaners provides detailed, eco-friendly house and office cleaning services for valued clients. Experience the difference of a truly green clean.</p>
+        <div class="contact-box">
+          <img src="assets/img/icon/call-icon.svg" alt="icon">
+          <div>
+            <h6><a href="tel:+27767652045" style="color:#fff;">+27767652045</a></h6>
+            <p style="font-size:13px;">Call us 24/7 for a free eco-cleaning consultation</p>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h3 style="color:#fff; margin-bottom:15px;">Quick Links</h3>
+        <ul>
+          <li><a href="contact.html">Help Center</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="service.html">Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Eco - Cleaners | All rights reserved.
+        <a href="#"><img src="assets/img/default/payment-img.svg" alt="payment"></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop">↑</button>
+
+  <script>
+    // Back to top
+    const btn = document.getElementById("backToTop");
+    btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>
